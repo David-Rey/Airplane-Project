@@ -302,10 +302,3 @@ function [y, m, b] = wingChord(x, q, C_ROOT, C_TIP, b)
 	b = C_TIP * q;
 	y = m * x + b;
 end
-
-%plot(range,ratio,'k');
-
-%ratio(ratio > .1) = NaN;
-%C_L_CRUISE(C_L_CRUISE > 0.45) = NaN;
-%trustMargin(trustMargin > 7000) = NaN;
-%trustMargin(trustMargin < 0) = NaN;
